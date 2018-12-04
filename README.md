@@ -2,7 +2,7 @@
 
 ![Valor Nubank](valor-nubank.png)
 
-O objetivo do site [caioalonso.com/dolarnubank](caioalonso.com/dolarnubank)
+O objetivo do site [caioalonso.com/dolarnubank](https://caioalonso.com/dolarnubank)
 é calcular o valor aproximado que vai aparecer na fatura quando for feita
 uma compra internacional usando o cartão de crédito do Nubank.
 
