@@ -1,6 +1,6 @@
 # Dólar de Cartões de Crédito Lilás
 
-O objetivo do site [caioalonso.com/dolarlilas](https://caioalonso.com/dolarlilas)
+O objetivo do site [caioalonso.com/dolarnobanco](https://caioalonso.com/dolarnobanco)
 é calcular o valor aproximado que vai aparecer na fatura quando for feita
 uma compra internacional usando um cartão de crédito da cor lilás.
 
