@@ -1,29 +1,27 @@
-# Dólar do Nubank
+# Dólar do Cartão de Crédito Lilás
 
-![Valor Nubank](valor-nubank.png)
-
-O objetivo do site [caioalonso.com/dolarnubank](https://caioalonso.com/dolarnubank)
+O objetivo do site [caioalonso.com/dolarlilas](https://caioalonso.com/dolarlilas)
 é calcular o valor aproximado que vai aparecer na fatura quando for feita
-uma compra internacional usando o cartão de crédito do Nubank.
+uma compra internacional usando um cartão de crédito da cor lilás.
 
 A seguir temos duas fórmulas. A primeira, que é justamente usada nesse site,
 mostra como calcular o valor na fatura considerando o valor da compra em dólares
 e a cotação atual do dólar PTAX que aparece no site do Banco Central.
 
-O Nubank afirma que o spread é de 4%, no entanto essa porcentagem varia
+Empresas de cartão de crédito lilás afirmam que o spread é de 4%, no entanto essa porcentagem varia
 todo dia, segundo um critério desconhecido, chegando a 4,3% ou mais. A segunda
 fórmula permite calcular o valor exato do spread considerando o valor que
 aparece na fatura, a cotação do dólar PTAX e o valor da compra em dólares.
 
 ---
 
-## Cálculo do dólar do Nubank
+## Cálculo do dólar do cc lilás
 
     Seja:
         C: o valor da compra em dólares
         P: o valor do dólar PTAX para venda (ver em www.bcb.gov.br)
         V: o valor final na fatura incluindo o IOF
-        S: o spread (4% segundo o Nubank)
+        S: o spread (4% segundo as empresas)
 
 Assim se calcula o valor final na fatura:
 
@@ -40,7 +38,7 @@ Considere o spread de 4,3%. Qual é o valor final na fatura do Nubank?
     V = 1,0638 * 1,043 * 25 * 3,7566
     V = 104,202768411
 
-O valor na fatura do Nubank é de R$ 104,20
+O valor na fatura é de R$ 104,20
 
 
 ---
@@ -80,8 +78,8 @@ subtraímos 1 da fórmula:
 
 Exemplo:
 
-Foi feita uma compra de US$ 25,00, com dólar PTAX a 3,7566. Na fatura do Nubank
-aparece o valor final de R$ 104,27. Qual é a porcentagem do spread do Nubank?
+Foi feita uma compra de US$ 25,00, com dólar PTAX a 3,7566. Na fatura do cartão
+aparece o valor final de R$ 104,27. Qual é a porcentagem do spread do cartão?
 
 
     S = (V / (1,0638 * C * P)) - 1
