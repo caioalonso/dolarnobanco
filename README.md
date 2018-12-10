@@ -32,7 +32,7 @@ Assim se calcula o valor final na fatura:
 Exemplo:
 
 Foi feita uma compra de US$ 25,00, com dólar PTAX a 3,7566.
-Considere o spread de 4,3%. Qual é o valor final na fatura do Nubank?
+Considere o spread de 4,3%. Qual é o valor final na fatura do cartão?
 
     V = 1,0638 * 1,043 * C * P
     V = 1,0638 * 1,043 * 25 * 3,7566
