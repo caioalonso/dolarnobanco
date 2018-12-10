@@ -1,8 +1,8 @@
-# Dólar de Cartões de Crédito Lilás
+# Dólar de Cartões com dados do Banco Central
 
 O objetivo do site [caioalonso.com/dolarnobanco](https://caioalonso.com/dolarnobanco)
 é calcular o valor aproximado que vai aparecer na fatura quando for feita
-uma compra internacional usando um cartão de crédito da cor lilás.
+uma compra internacional usando um cartão de crédito.
 
 A seguir temos duas fórmulas. A primeira, que é justamente usada nesse site,
 mostra como calcular o valor na fatura considerando o valor da compra em dólares
