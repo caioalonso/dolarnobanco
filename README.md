@@ -1,4 +1,4 @@
-# Dólar do Cartão de Crédito Lilás
+# Dólar de Cartões de Crédito Lilás
 
 O objetivo do site [caioalonso.com/dolarlilas](https://caioalonso.com/dolarlilas)
 é calcular o valor aproximado que vai aparecer na fatura quando for feita
@@ -15,7 +15,7 @@ aparece na fatura, a cotação do dólar PTAX e o valor da compra em dólares.
 
 ---
 
-## Cálculo do dólar do cc lilás
+## Cálculo do dólar
 
     Seja:
         C: o valor da compra em dólares
