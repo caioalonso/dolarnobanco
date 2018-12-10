@@ -37,7 +37,7 @@ body {
 header {
     padding: 10px 0;
     margin-bottom: 20px;
-    background-color: #6E2B77;
+    background-color: #7a547a;
     text-align: center
 }
 
@@ -48,7 +48,7 @@ header a {
 
 form a {
     margin: 8px;
-    color: #6E2B77
+    color: #7a547a
 }
 
 a {
@@ -68,7 +68,7 @@ h1 {
 }
 
 label {
-    color: #6E2B77;
+    color: #7a547a;
     text-align: right
 }
 
@@ -83,7 +83,7 @@ input[type="text"] {
 }
 
 .moeda input[type="text"]:focus {
-    border-color: #6E2B77;
+    border-color: #7a547a;
     outline: 0
 }
 
@@ -104,7 +104,7 @@ input[type="text"] {
 }
 
 #vars input[type="text"]:focus {
-    border-bottom-color:#6E2B77;
+    border-bottom-color:#7a547a;
     outline: 0
 }
 
@@ -115,7 +115,7 @@ input[type="text"] {
     width: 400px;
     color: #444;
     background-color: #F0E9F1;
-    border-top: 3px solid #6E2B77
+    border-top: 3px solid #7a547a
 }
 
 [disabled] {
