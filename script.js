@@ -1,4 +1,4 @@
-(function(window, document) {
+(async function(window, document) {
 'use strict';
 
 var $usd = document.getElementById('usd');
@@ -12,12 +12,9 @@ var $stepToStep = document.getElementById('step-to-step');
 var defaultIof = 6.38;
 var defaultSpread = 4;
 
-var jsonpCallback = 'onReceiveData';
-
-window[jsonpCallback] = function(response) {
+function onReceiveData(response) {
     try {
-        $ptax.value = numToStr(response.query.results.json.conteudo[0].
-            valorVenda);
+        $ptax.value = numToStr(response.conteudo[0].valorVenda);
     }
     catch(e) {
         $usd.value = 'Erro';
@@ -301,26 +298,15 @@ if (window.innerHeight < 627) {
     document.body.style.overflowY = 'scroll';
 }
 
-
-// Pegar dados do Banco Central usando a api do Yahoo YQL
 var d = new Date();
 var nocache = '' + d.getFullYear() +
     zero(d.getMonth() + 1) +
     zero(d.getDate()) +
     zero(d.getHours());
 
-var query = 'select * from json where url="';
-query += 'https://www.bcb.gov.br/api/conteudo/pt-br/PAINEL_INDICADORES/cambio?';
-query += nocache + '"';
+let resp = await fetch('https://www.bcb.gov.br/api/conteudo/pt-br/PAINEL_INDICADORES/cambio?'+ nocache)
+    .then(response => response.json())
+    .catch(err => console.log(err));
 
-query = encodeURIComponent(query);
-
-var script = document.createElement('script');
-
-var param = 'q=' + query + '&format=json&callback=' + jsonpCallback;
-
-script.src = 'https://query.yahooapis.com/v1/public/yql?' + param;
-script.async = 'async';
-document.body.appendChild(script);
-
+onReceiveData(resp);
 })(window, document);
